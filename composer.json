@@ -10,5 +10,13 @@
   }],
   "require": {
     "php": "^7.0|^8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "\\StellaMaris\\Clock\\": "src"
+    },
+    "files": [
+      "polyfill-psr20.php"
+    ]
   }
 }
