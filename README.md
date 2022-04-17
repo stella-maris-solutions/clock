@@ -2,6 +2,12 @@
 
 An implementation of the proposed PSR-20 clock-interface
 
+[![Total Downloads](http://poser.pugx.org/stella-maris/clock/downloads)](https://packagist.org/packages/stella-maris/clock)
+[![Latest Stable Version](http://poser.pugx.org/stella-maris/clock/v)](https://packagist.org/packages/stella-maris/clock)
+[![Latest Unstable Version](http://poser.pugx.org/stella-maris/clock/v/unstable)](https://packagist.org/packages/stella-maris/clock)
+
+[![pipeline status](https://gitlab.com/stella-maris/clock/badges/main/pipeline.svg)](https://gitlab.com/stella-maris/clock/-/commits/main)
+
 ## Installation
 
 ```bash
