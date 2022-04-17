@@ -13,7 +13,7 @@
   },
   "autoload": {
     "psr-4": {
-      "\\StellaMaris\\Clock\\": "src"
+      "StellaMaris\\Clock\\": "src"
     },
     "files": [
       "polyfill-psr20.php"
