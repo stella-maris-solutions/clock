@@ -12,12 +12,12 @@ use StellaMaris\Clock\ClockInterface;
 
 class ClockInterfaceTest extends TestCase
 {
-    /**
-     * @testdox The interface can be autoloaded
-     * @covers ClockInterface::now;
-     */
-    public function testInterfaceIsUsable(): void
-    {
-        self::assertInstanceof(ClockInterface::class, $this->getMockBuilder(ClockInterface::class)->getMock());
-    }
+	/**
+	 * @testdox The interface can be autoloaded
+	 * @covers ClockInterface::now;
+	 */
+	public function testInterfaceIsUsable() : void
+	{
+		self::assertInstanceof(ClockInterface::class, $this->getMockBuilder(ClockInterface::class)->getMock());
+	}
 }
