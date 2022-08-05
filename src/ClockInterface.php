@@ -11,8 +11,8 @@ use DateTimeImmutable;
 
 interface ClockInterface
 {
-    /**
-     * Return the current point in time as a DateTimeImmutable object
-     */
-    public function now(): DateTimeImmutable;
+	/**
+	 * Return the current point in time as a DateTimeImmutable object
+	 */
+	public function now() : DateTimeImmutable;
 }
