@@ -1,4 +1,11 @@
+stages:
+  - test
+  - build
+
 image: registry.gitlab.com/stella-maris/php-containers/php8.1
+
+include:
+  - template: Composer.gitlab-ci.yml
 
 # Select what we should cache between builds
 cache:
@@ -15,3 +22,9 @@ before_script:
 test:
   script:
     - tools/phpunit --configuration phpunit.xml.dist
+
+# Publish composer package to the GitLab package registry
+# Extends the default GitLab template located at https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Composer.gitlab-ci.yml
+publish:
+  only:
+    - tags
