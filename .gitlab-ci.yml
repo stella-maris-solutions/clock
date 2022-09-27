@@ -2,8 +2,6 @@ stages:
   - test
   - build
 
-image: registry.gitlab.com/stella-maris/php-containers/php8.1
-
 include:
   - template: Composer.gitlab-ci.yml
 
@@ -13,13 +11,13 @@ cache:
     - vendor/
     - tools/
 
-before_script:
-  - phive install --trust-gpg-keys 0x4AA394086372C20A,0x12CE0F1D262429A5,0x31C7E470E2138192
-  - composer install
-
 # Run our tests
 # If Xdebug was installed you can generate a coverage report and see code coverage metrics.
 test:
+  image: registry.gitlab.com/stella-maris/php-containers/php8.1
+  before_script:
+    - phive install --trust-gpg-keys 0x4AA394086372C20A,0x12CE0F1D262429A5,0x31C7E470E2138192
+    - composer install
   script:
     - tools/phpunit --configuration phpunit.xml.dist
 
