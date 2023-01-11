@@ -20,7 +20,7 @@ This interface allows one to inject one of the implemntations that provide the
 clock-interface.
 
 ```php
-use StellaMaris/Clock/CLockInterface;
+use StellaMaris/Clock/ClockInterface;
 
 final class PastChecker
 {
